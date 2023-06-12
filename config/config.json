@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "yquronka",
+    "password": "Cn61nx8QOYWg-OULF-RYkNSaYkzQHiO_",
+    "database": "yquronka",
+    "host": "ruby.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "yquronka",
+    "password": "Cn61nx8QOYWg-OULF-RYkNSaYkzQHiO_",
+    "database": "yquronka_test",
+    "host": "ruby.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "yquronka",
+    "password": "Cn61nx8QOYWg-OULF-RYkNSaYkzQHiO_",
+    "database": "yquronka_production",
+    "host": "ruby.db.elephantsql.com",
+    "dialect": "postgres"
+  }
+}
