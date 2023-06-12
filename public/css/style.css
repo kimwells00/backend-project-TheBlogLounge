@@ -1,0 +1,155 @@
+.navbar {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.navbutton {
+  color: #454249;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.content {
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+}
+
+.homeBody {
+  background-color: #faeee7;
+}
+.bloglounge {
+  font-size: 2rem;
+  color: #454249;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-color: #b99095;
+  border: 4px solid;
+}
+.feedPageBody {
+  background-color: #faeee7;
+}
+.background {
+  background-color: #faeee7;
+}
+.yourFeedHeader {
+  font-size: 2rem;
+  color: #454249;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-color: #b99095;
+  border: 4px solid;
+}
+.commentContainer {
+  text-align: center;
+}
+
+.comment-card {
+  display: inline-block;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.commentscard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 200px; /* Adjust the minimum width as needed */
+  max-width: 400px; /* Adjust the maximum width as needed */
+}
+.card {
+  width: 250px; /* Adjust the width as per your preference */
+  height: 350px; /* Adjust the height as per your preference */
+  border: 4px solid #ccc;
+
+  padding: 10px;
+  background-color: white;
+  border-color: #b99095;
+}
+.signupBody {
+  background-color: #faeee7;
+}
+.SignUp {
+  font-size: 2rem;
+  color: #b99095;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60%;
+
+  border-color: #b99095;
+  border: 4px solid;
+}
+.createFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+}
+.signupFormContainer {
+  width: 250px; /* Adjust the width as per your preference */
+  height: 350px; /* Adjust the height as per your preference */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: white;
+  border-color: #454249;
+}
+
+.guestLoginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 440px;
+}
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signupHeader {
+  color: #454249;
+}
+.signupButton {
+  background-color: #b99095;
+  color: #454249;
+  border-color: #454249;
+  width: 200px; /* Adjust the width as per your preference */
+  height: 30px;
+}
+.guestButton {
+  background-color: #b99095;
+  color: #454249;
+  border-color: #454249;
+  width: 200px; /* Adjust the width as per your preference */
+  height: 30px;
+}
+.LoginButton {
+  background-color: #b99095;
+  color: #454249;
+  border-color: #454249;
+  width: 200px; /* Adjust the width as per your preference */
+  height: 30px;
+}
