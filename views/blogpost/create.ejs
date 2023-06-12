@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EJS Template</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="background">
+    <%- include ("../partials/nav.ejs") %>
+    <h1 class="bloglounge">create post</h1>
+
+    <div class="signupFormContainer">
+      <h4>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        your user id: <%= userId %>
+      </h4>
+
+      <form action="/blogpost/create_blogpost" method="post">
+        <input type="text" name="title" placeholder="TITLE" />
+        <input
+          class="content"
+          type="text"
+          name="content"
+          placeholder="CONTENT"
+        />
+        <input type="text" name="userId" placeholder="USER ID" />
+
+        <input type="submit" value="POST" />
+      </form>
+    </div>
+  </body>
+</html>

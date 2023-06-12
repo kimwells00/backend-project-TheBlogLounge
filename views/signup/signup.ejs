@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EJS Template</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="signupBody">
+    <h1 class="bloglounge">Welcome to The Blog Lounge</h1>
+    <div class="signupFormContainer">
+      <form action="/signup/signup_user" method="post">
+        <h1 class="signupHeader">Sign Up</h1>
+        <br /><br />
+        <input type="text" name="name" placeholder="name" /> <br />
+        <br />
+        <input type="text" name="email" placeholder="email" /> <br />
+        <br />
+        <input type="password" name="password" placeholder="password" /> <br />
+        <br />
+        <input type="submit" value="Sign Up" class="signupButton" />
+      </form>
+    </div>
+    <div class="guestLoginContainer">
+      <form action="/login/login_guest" method="POST">
+        <button class="guestButton" type="submit">Log in as Guest</button>
+      </form>
+    </div>
+    <div class="LoginContainer">
+      <form action="/login/login" method="POST">
+        <h4>already have an account?</h4>
+        <button class="LoginButton" type="submit">Log in</button>
+      </form>
+    </div>
+  </body>
+</html>

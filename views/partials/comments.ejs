@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EJS Template</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="background">
+   
+    <h1 class="bloglounge">Leave a comment</h1>
+    <div class="createFormContainer"></div>
+    <div class="container">
+      <form action="/comments/create_new_comment" method="post">
+        <input type="text" name="blogPostId" placeholder="blogPostId" />
+        <input
+         
+          type="text"
+          name="content"
+          placeholder="content"
+        />
+        <input type="text" name="userId" placeholder="userId" />
+
+        <input type="submit" value="POST" />
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

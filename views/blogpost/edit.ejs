@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EJS Template</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="background">
+    <%- include ("../partials/nav.ejs") %>
+    <h1 class="bloglounge">edit post</h1>
+    <div class="container">
+      <form action="/blogpost/update_blogpost" method="post">
+        <h2>update your post</h2>
+        <input type="text" name="title" placeholder="title" />
+        <input type="text" name="content" placeholder="content" />
+        <input type="text" name="blogPostId" placeholder="blogPostId" />
+        <input type="submit" value=" UPDATE POST" />
+      </form>
+    </div>
+    <div class="container">
+      <form action="/blogpost/delete_blogpost" method="post">
+        <h2>delete your post</h2>
+
+        <input type="text" name="blogPostId" placeholder="blogPostId" />
+        <input type="submit" value=" DELETE POST" />
+      </form>
+    </div>
+  </body>
+</html>

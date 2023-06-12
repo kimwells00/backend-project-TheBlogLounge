@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EJS Template</title>
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      .blogPostTitle {
+        cursor: pointer;
+        color: black;
+      }
+      .blogTitleCard {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 2px;
+        background-color: #fffffe;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .card {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #fffffe;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+      }
+      .container {
+        text-align: center;
+      }
+
+      .blog-posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .blog-post {
+        flex-basis: 25%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .card {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body class="feedPageBody">
+    <%- include("../partials/nav.ejs") %>
+    <h1 class="bloglounge">FEED</h1>
+    <div class="container">
+      <div class="blog-posts">
+        <% post.forEach((blogPosts) => { %>
+        <div class="blog-post">
+          <div class="blogTitleCard">
+            <h3 class="blogPostTitle"><%= blogPosts.title %></h3>
+          </div>
+          <div class="card">
+            <h3><%= blogPosts.title %></h3>
+            <p><%= blogPosts.content %></p>
+            <p><strong>Blogpost ID: <%= blogPosts.id %></strong></p>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+
+    <script>
+      // Get all blog post preview elements
+      const blogPostPreviews = document.querySelectorAll(".blogPostTitle");
+
+      // Add click event listener to each blog post preview
+      blogPostPreviews.forEach((preview) => {
+        const titleCard = preview.parentElement;
+        const card = titleCard.nextElementSibling;
+
+        preview.addEventListener("click", () => {
+          // Toggle the display of the corresponding blog post content
+          card.style.display = card.style.display === "none" ? "block" : "none";
+
+          // Dynamically adjust the card height to fit the content
+          if (card.style.display === "block") {
+            card.style.height = "auto";
+          } else {
+            card.style.height = "0";
+          }
+        });
+      });
+    </script>
+    <%- include("../partials/comments.ejs") %>
+  </body>
+</html>

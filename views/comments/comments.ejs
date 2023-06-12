@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="feedPageBody">
+    <%- include("../partials/nav.ejs") %>
+    <h1 class="bloglounge">comments</h1>
+    <div class="commentContainer">
+      <div class="blog-posts">
+        <% userComments.forEach((comments) => { %>
+        <div class="comment-card">
+          <div class="commentscard">
+            <h3><%= comments.User.name %> commented:</h3>
+            <h3><%= comments.content %></h3>
+
+            <h3>on post:<%= comments.blogPost.title %></h3>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </body>
+</html>
