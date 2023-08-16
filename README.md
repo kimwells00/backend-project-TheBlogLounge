@@ -2,16 +2,12 @@
 
 ##Contents
 --- 
-  * What It Is
-  * What We Used
-  * Challenges and Solutions
-  * MVP
-  * Our Stretch Goals
-  * Authors
+  * Live demo
+  * What it is
+  * Technologies used
   * Screenshots
-  * Github Link
-  * Code Examples
+  * Code examples
 
-#LIVE DEMO 
+##LIVE DEMO 
 
 #WHAT IT IS 
