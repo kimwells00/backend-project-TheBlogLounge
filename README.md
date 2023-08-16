@@ -1,10 +1,4 @@
 # backend-project-TheBlogLounge
-#CONTENTS
-*LIVE DEMO 
-*WHAT IT IS
-*TECHNOLOGIES USED
-*SCREENSHOTS
-*CODE EXAMPLES
 
 ##Contents
 --- 
