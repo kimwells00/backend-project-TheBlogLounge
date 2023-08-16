@@ -6,8 +6,6 @@
   * What it is
   * Technologies used
   * Screenshots
-  * Code examples
-
-##LIVE DEMO 
-
-#WHAT IT IS 
+  * Code examples 
+##Live demo
+---
